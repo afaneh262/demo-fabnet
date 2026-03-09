@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabnet</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-white text-[#102C47]">
+    <header class="sticky top-0 z-50 w-full border-b border-[#102C4720] bg-white/95 backdrop-blur">
+        <!-- Top bar -->
+        <div class="hidden border-b border-[#102C4720] bg-[#102C47] text-white md:block">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm">
+                <div class="flex items-center gap-6">
+                    <a href="mailto:info@fabnet.com"
+                        class="flex items-center gap-2 transition-colors hover:text-[#7FA94B]">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7l8 6 8-6"></path>
+                        </svg>
+                        <span>info@fabnet.com</span>
+                    </a>
+                    <a href="tel:+97440172330" class="flex items-center gap-2 transition-colors hover:text-[#7FA94B]">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.6a2 2 0 0 1-.45 2.11L8.1 9.91a16 16 0 0 0 6 6l1.48-1.14a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.6.63A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>+974 4017 2330</span>
+                    </a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="/about" class="transition-colors hover:text-[#7FA94B]">About Us</a>
+                    <a href="/support" class="transition-colors hover:text-[#7FA94B]">Support</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main navigation -->
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+            <a href="/" class="flex items-center gap-2">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#102C47]">
+                    <span class="text-xl font-bold text-white">F</span>
+                </div>
+                <span class="text-2xl font-bold tracking-tight text-[#102C47]">FABNET</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden items-center gap-8 lg:flex">
+                <div class="relative group">
+                    <button
+                        class="flex items-center gap-1 rounded-md px-4 py-2 text-sm font-medium text-[#102C47] transition hover:bg-[#7FA94B]/10">
+                        Products
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="invisible absolute left-0 top-full z-50 mt-2 w-[500px] rounded-md border border-[#102C4720] bg-white p-4 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                        <ul class="grid gap-3 md:grid-cols-2">
+                            <li>
+                                <a href="/products/cabinets"
+                                    class="block rounded-md p-3 transition-colors hover:bg-[#7FA94B]/10">
+                                    <div class="text-sm font-medium">Cabinets &amp; Enclosures</div>
+                                    <p class="mt-1 text-sm text-[#102C47]/70">Floor mount, wall mount, and outdoor
+                                        cabinet solutions</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/products/fiber-cables"
+                                    class="block rounded-md p-3 transition-colors hover:bg-[#7FA94B]/10">
+                                    <div class="text-sm font-medium">Fiber Cables</div>
+                                    <p class="mt-1 text-sm text-[#102C47]/70">Indoor, outdoor, and fire-rated fiber
+                                        optic cables</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/products/copper-cables"
+                                    class="block rounded-md p-3 transition-colors hover:bg-[#7FA94B]/10">
+                                    <div class="text-sm font-medium">Bulk Copper Cables</div>
+                                    <p class="mt-1 text-sm text-[#102C47]/70">Cat6, Cat6A, Cat7, Cat7A, and Cat8 cable
+                                        solutions</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/products/accessories"
+                                    class="block rounded-md p-3 transition-colors hover:bg-[#7FA94B]/10">
+                                    <div class="text-sm font-medium">Accessories</div>
+                                    <p class="mt-1 text-sm text-[#102C47]/70">Copper, fiber, and FTTX accessories</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="flex items-center gap-1 rounded-md px-4 py-2 text-sm font-medium text-[#102C47] transition hover:bg-[#7FA94B]/10">
+                        Solutions
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="invisible absolute left-0 top-full z-50 mt-2 w-[500px] rounded-md border border-[#102C4720] bg-white p-4 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                        <ul class="grid gap-3 md:grid-cols-2">
+                            <li>
+                                <a href="/solutions/data-center"
+                                    class="block rounded-md p-3 transition-colors hover:bg-[#7FA94B]/10">
+                                    <div class="text-sm font-medium">Data Center</div>
+                                    <p class="mt-1 text-sm text-[#102C47]/70">Modular and containerized data center
+                                        solutions</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/solutions/dcim"
+                                    class="block rounded-md p-3 transition-colors hover:bg-[#7FA94B]/10">
+                                    <div class="text-sm font-medium">Fabnet DCIM</div>
+                                    <p class="mt-1 text-sm text-[#102C47]/70">Data center infrastructure management</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/solutions/aim"
+                                    class="block rounded-md p-3 transition-colors hover:bg-[#7FA94B]/10">
+                                    <div class="text-sm font-medium">AIM Solution</div>
+                                    <p class="mt-1 text-sm text-[#102C47]/70">Automated infrastructure management</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/solutions/ftth"
+                                    class="block rounded-md p-3 transition-colors hover:bg-[#7FA94B]/10">
+                                    <div class="text-sm font-medium">Fiber to the Home</div>
+                                    <p class="mt-1 text-sm text-[#102C47]/70">Complete FTTH deployment solutions</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="/data-sheets"
+                    class="inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-[#7FA94B]/10">
+                    Data Sheets
+                </a>
+            </div>
+
+            <div class="hidden items-center gap-3 lg:flex">
+                <a href="/login"
+                    class="flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium text-[#102C47] transition-colors hover:bg-[#7FA94B]/10">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20 21a8 8 0 0 0-16 0"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Login
+                </a>
+                <a href="/contact"
+                    class="rounded-md bg-[#7FA94B] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90">
+                    Contact Us
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="lg:hidden text-[#102C47]" aria-label="Open menu" type="button">
+                <svg id="menu-open-icon" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="menu-close-icon" class="hidden h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M6 18L18 6"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden border-t border-[#102C4720] lg:hidden">
+            <div class="space-y-1 px-4 py-4">
+                <div class="space-y-2">
+                    <p class="px-3 text-xs font-semibold uppercase tracking-wider text-[#102C47]/70">Products</p>
+                    <a href="/products/cabinets"
+                        class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Cabinets &amp; Enclosures</a>
+                    <a href="/products/fiber-cables"
+                        class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Fiber Cables</a>
+                    <a href="/products/copper-cables"
+                        class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Bulk Copper Cables</a>
+                    <a href="/products/accessories"
+                        class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Accessories</a>
+                </div>
+
+                <div class="space-y-2 pt-4">
+                    <p class="px-3 text-xs font-semibold uppercase tracking-wider text-[#102C47]/70">Solutions</p>
+                    <a href="/solutions/data-center"
+                        class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Data Center</a>
+                    <a href="/solutions/dcim" class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Fabnet
+                        DCIM</a>
+                    <a href="/solutions/aim" class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">AIM
+                        Solution</a>
+                    <a href="/solutions/ftth" class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Fiber to
+                        the Home</a>
+                </div>
+
+                <div class="space-y-2 border-t border-[#102C4720] pt-4">
+                    <a href="/data-sheets" class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Data
+                        Sheets</a>
+                    <a href="/login" class="block rounded-md px-3 py-2 text-sm hover:bg-[#7FA94B]/10">Login</a>
+                </div>
+
+                <div class="pt-4">
+                    <a href="/contact"
+                        class="block w-full rounded-md bg-[#7FA94B] px-4 py-2 text-center text-sm font-medium text-white transition hover:opacity-90">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="relative overflow-hidden bg-[#102C47] text-white">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0"
+                style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);">
+            </div>
+        </div>
+
+        <div class="relative mx-auto max-w-7xl px-4 py-20 md:py-28 lg:py-36">
+            <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <div id="hero-tag"
+                            class="inline-flex items-center rounded-full border border-[#7FA94B]/30 bg-[#7FA94B]/10 px-4 py-1.5 text-sm font-medium text-[#7FA94B]">
+                            <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"></path>
+                            </svg>
+                            Micro Modular Data Center
+                        </div>
+
+                        <h1 id="hero-title" class="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+                            Plug-and-Play All-in-One Cabinet
+                        </h1>
+
+                        <p id="hero-subtitle" class="text-xl font-medium text-[#7FA94B] md:text-2xl">
+                            Fast Deployment | High Efficiency | Scalable Design
+                        </p>
+
+                        <p id="hero-description" class="max-w-xl text-lg leading-relaxed text-white/80">
+                            Transform your infrastructure with our prefabricated modular solutions designed for rapid
+                            deployment and
+                            maximum efficiency.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/solutions"
+                            class="inline-flex items-center rounded-md bg-[#7FA94B] px-6 py-3 text-base font-medium text-white transition hover:opacity-90">
+                            Explore Solutions
+                            <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+
+                        <a href="/contact"
+                            class="inline-flex items-center rounded-md border border-white/30 px-6 py-3 text-base font-medium text-white transition hover:bg-white/10">
+                            Request a Quote
+                        </a>
+                    </div>
+
+                    <!-- Slide indicators -->
+                    <div class="flex gap-2 pt-4">
+                        <button type="button" class="hero-indicator h-2 w-8 rounded-full bg-[#7FA94B]" data-slide="0"
+                            aria-label="Go to slide 1"></button>
+                        <button type="button" class="hero-indicator h-2 w-2 rounded-full bg-white/30 hover:bg-white/50"
+                            data-slide="1" aria-label="Go to slide 2"></button>
+                        <button type="button" class="hero-indicator h-2 w-2 rounded-full bg-white/30 hover:bg-white/50"
+                            data-slide="2" aria-label="Go to slide 3"></button>
+                    </div>
+                </div>
+
+                <div class="relative hidden lg:block">
+                    <div class="relative aspect-square">
+                        <!-- Decorative circles -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="h-72 w-72 rounded-full border border-[#7FA94B]/20"></div>
+                            <div class="absolute h-56 w-56 rounded-full border border-[#7FA94B]/30"></div>
+                            <div class="absolute h-40 w-40 rounded-full bg-[#7FA94B]/10"></div>
+                        </div>
+
+                        <!-- Center icon -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="rounded-2xl bg-[#7FA94B] p-6 shadow-2xl">
+                                <div id="hero-icon" class="text-white">
+                                    <svg class="h-16 w-16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8M8 12h8M8 17h5">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating stats -->
+                        <div
+                            class="absolute left-0 top-1/4 rounded-lg border border-white/10 bg-white/10 p-4 backdrop-blur-sm">
+                            <p class="text-3xl font-bold text-[#7FA94B]">25+</p>
+                            <p class="text-sm text-white/70">Years Experience</p>
+                        </div>
+
+                        <div
+                            class="absolute bottom-1/4 right-0 rounded-lg border border-white/10 bg-white/10 p-4 backdrop-blur-sm">
+                            <p class="text-3xl font-bold text-[#7FA94B]">500+</p>
+                            <p class="text-sm text-white/70">Projects Delivered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const heroSlides = [
+                {
+                    tag: "Micro Modular Data Center",
+                    title: "Plug-and-Play All-in-One Cabinet",
+                    subtitle: "Fast Deployment | High Efficiency | Scalable Design",
+                    description: "Transform your infrastructure with our prefabricated modular solutions designed for rapid deployment and maximum efficiency.",
+                    icon: `
+            <svg class="h-16 w-16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8M8 12h8M8 17h5"></path>
+            </svg>
+          `
+                },
+                {
+                    tag: "Intelligent Cabling",
+                    title: "AIM-Enabled Smart Infrastructure",
+                    subtitle: "Advanced Visibility | Complete Control",
+                    description: "FABNET's AIM-Enabled Intelligent Cabling System delivers advanced visibility and control of your structured cabling infrastructure.",
+                    icon: `
+            <svg class="h-16 w-16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="6" cy="12" r="2"></circle>
+              <circle cx="18" cy="6" r="2"></circle>
+              <circle cx="18" cy="18" r="2"></circle>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h8M16.5 7.5l-8 3M16.5 16.5l-8-3"></path>
+            </svg>
+          `
+                },
+                {
+                    tag: "FABNET DCIM",
+                    title: "Complete Data Center Management",
+                    subtitle: "Monitor | Manage | Optimize",
+                    description: "Comprehensive tools for monitoring, managing, and optimizing data center operations with real-time insights.",
+                    icon: `
+            <svg class="h-16 w-16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 12.5l1.5 1.5 3.5-4"></path>
+            </svg>
+          `
+                }
+            ];
+
+            let currentSlide = 0;
+
+            const tagEl = document.getElementById("hero-tag");
+            const titleEl = document.getElementById("hero-title");
+            const subtitleEl = document.getElementById("hero-subtitle");
+            const descriptionEl = document.getElementById("hero-description");
+            const iconEl = document.getElementById("hero-icon");
+            const indicators = document.querySelectorAll(".hero-indicator");
+
+            function renderSlide(index) {
+                const slide = heroSlides[index];
+                tagEl.innerHTML = `
+          <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"></path>
+          </svg>
+          ${slide.tag}
+        `;
+                titleEl.textContent = slide.title;
+                subtitleEl.textContent = slide.subtitle;
+                descriptionEl.textContent = slide.description;
+                iconEl.innerHTML = slide.icon;
+
+                indicators.forEach((btn, i) => {
+                    if (i === index) {
+                        btn.className = "hero-indicator h-2 w-8 rounded-full bg-[#7FA94B]";
+                    } else {
+                        btn.className = "hero-indicator h-2 w-2 rounded-full bg-white/30 hover:bg-white/50";
+                    }
+                });
+            }
+
+            indicators.forEach((button) => {
+                button.addEventListener("click", function () {
+                    currentSlide = Number(this.getAttribute("data-slide"));
+                    renderSlide(currentSlide);
+                });
+            });
+
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % heroSlides.length;
+                renderSlide(currentSlide);
+            }, 6000);
+        </script>
+    </section>
+    <section class="bg-white py-20 md:py-28">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="mb-16 space-y-4 text-center">
+                <p class="text-sm font-semibold uppercase tracking-wider text-[#7FA94B]">
+                    Industry Focused
+                </p>
+                <h2 class="text-3xl font-bold tracking-tight text-[#102C47] md:text-4xl lg:text-5xl">
+                    Solutions for Every Sector
+                </h2>
+                <p class="mx-auto max-w-2xl text-lg leading-relaxed text-[#102C47]/70">
+                    Tailored network infrastructure solutions designed to meet the unique demands of diverse industries.
+                </p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <a href="/industries/smart-cities"
+                    class="group relative overflow-hidden rounded-xl border border-[#102C4720] bg-white p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                    <div class="space-y-4">
+                        <div
+                            class="inline-flex rounded-lg bg-[#7FA94B]/10 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 21V8l7-5 7 5v13"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 21v-6h6v6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                            Construction &amp; Smart Cities
+                        </h3>
+                        <p class="leading-relaxed text-[#102C47]/70">
+                            Intelligent infrastructure solutions for modern urban development
+                        </p>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 h-1 w-0 bg-[#7FA94B] transition-all duration-300 group-hover:w-full">
+                    </div>
+                </a>
+
+                <a href="/industries/infrastructure"
+                    class="group relative overflow-hidden rounded-xl border border-[#102C4720] bg-white p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                    <div class="space-y-4">
+                        <div
+                            class="inline-flex rounded-lg bg-[#7FA94B]/10 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                            Roads &amp; Infrastructure
+                        </h3>
+                        <p class="leading-relaxed text-[#102C47]/70">
+                            Robust connectivity for transportation networks
+                        </p>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 h-1 w-0 bg-[#7FA94B] transition-all duration-300 group-hover:w-full">
+                    </div>
+                </a>
+
+                <a href="/industries/security"
+                    class="group relative overflow-hidden rounded-xl border border-[#102C4720] bg-white p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                    <div class="space-y-4">
+                        <div
+                            class="inline-flex rounded-lg bg-[#7FA94B]/10 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                            Security &amp; Defense
+                        </h3>
+                        <p class="leading-relaxed text-[#102C47]/70">
+                            High-security communication systems
+                        </p>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 h-1 w-0 bg-[#7FA94B] transition-all duration-300 group-hover:w-full">
+                    </div>
+                </a>
+
+                <a href="/industries/healthcare"
+                    class="group relative overflow-hidden rounded-xl border border-[#102C4720] bg-white p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                    <div class="space-y-4">
+                        <div
+                            class="inline-flex rounded-lg bg-[#7FA94B]/10 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                            Healthcare
+                        </h3>
+                        <p class="leading-relaxed text-[#102C47]/70">
+                            Reliable networks for critical medical systems
+                        </p>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 h-1 w-0 bg-[#7FA94B] transition-all duration-300 group-hover:w-full">
+                    </div>
+                </a>
+
+                <a href="/industries/hospitality"
+                    class="group relative overflow-hidden rounded-xl border border-[#102C4720] bg-white p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                    <div class="space-y-4">
+                        <div
+                            class="inline-flex rounded-lg bg-[#7FA94B]/10 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 11V7a2 2 0 0 1 2-2h5v6">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20 21v-8a2 2 0 0 0-2-2H4v10">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 21h16"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 7h3a2 2 0 0 1 2 2v2h-5V7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                            Hospitality &amp; Residential
+                        </h3>
+                        <p class="leading-relaxed text-[#102C47]/70">
+                            Seamless connectivity for premium experiences
+                        </p>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 h-1 w-0 bg-[#7FA94B] transition-all duration-300 group-hover:w-full">
+                    </div>
+                </a>
+
+                <a href="/industries/aviation"
+                    class="group relative overflow-hidden rounded-xl border border-[#102C4720] bg-white p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                    <div class="space-y-4">
+                        <div
+                            class="inline-flex rounded-lg bg-[#7FA94B]/10 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2 16l20-5-8-2-2-7-3 1 1 6-5 2-3-1-1 2 3 2-1 3 2 1 2-3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                            Aviation
+                        </h3>
+                        <p class="leading-relaxed text-[#102C47]/70">
+                            Mission-critical infrastructure for aviation
+                        </p>
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 h-1 w-0 bg-[#7FA94B] transition-all duration-300 group-hover:w-full">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-20 md:py-28">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+                <!-- Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <p class="text-sm font-semibold uppercase tracking-wider text-[#7FA94B]">
+                            Data Center Solutions
+                        </p>
+                        <h2 class="text-3xl font-bold tracking-tight text-[#102C47] md:text-4xl lg:text-5xl">
+                            AI-Ready Passive Infrastructure
+                        </h2>
+                        <p class="text-lg leading-relaxed text-[#102C47]/70">
+                            The rapid growth of artificial intelligence, cloud platforms, and edge computing demands
+                            physical infrastructure that can support extremely high data throughput, minimal latency,
+                            and seamless scalability.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 leading-relaxed text-[#102C47]/70">
+                        <p>
+                            FABNET's AI-READY PASSIVE DATA CENTER SOLUTIONS provides a modular, intelligent, and
+                            resilient cabling ecosystem built specifically to meet these requirements and serves as the
+                            backbone of next generation digital transformation.
+                        </p>
+                        <p>
+                            FABNET combines advanced fiber and copper systems with optimized containment, power
+                            distribution, and intelligent management capabilities. This integrated approach ensures
+                            maximum reliability, operational efficiency, and adaptability for mission critical
+                            environments.
+                        </p>
+                    </div>
+
+                    <a href="/solutions/data-center"
+                        class="inline-flex items-center rounded-md bg-[#102C47] px-6 py-3 text-base font-medium text-white transition hover:opacity-90">
+                        Learn More
+                        <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Cards -->
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div
+                        class="group rounded-xl border border-[#102C4720] bg-white p-6 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                        <div class="space-y-4">
+                            <div
+                                class="inline-flex rounded-lg bg-[#102C47]/10 p-3 text-[#102C47] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8M8 12h8M8 17h5">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                                Micro Modular DC
+                            </h3>
+                            <p class="text-sm leading-relaxed text-[#102C47]/70">
+                                Plug-and-play all-in-one cabinet solution with fast deployment and scalable design
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Self-contained</span>
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Rapid
+                                    deployment</span>
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Scalable</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group rounded-xl border border-[#102C4720] bg-white p-6 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                        <div class="space-y-4">
+                            <div
+                                class="inline-flex rounded-lg bg-[#102C47]/10 p-3 text-[#102C47] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 7v10a2 2 0 0 0 2 2h3V7">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 7v12h3a2 2 0 0 0 2-2V7">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 11h4M10 15h4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                                Prefabricated Modular DC
+                            </h3>
+                            <p class="text-sm leading-relaxed text-[#102C47]/70">
+                                Build faster and scale smarter with integrated power, cooling, racks, and DCIM
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Pre-integrated</span>
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Energy
+                                    efficient</span>
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Customizable</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group rounded-xl border border-[#102C4720] bg-white p-6 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                        <div class="space-y-4">
+                            <div
+                                class="inline-flex rounded-lg bg-[#102C47]/10 p-3 text-[#102C47] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <rect x="3" y="7" width="18" height="10" rx="2"></rect>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17v2M17 17v2M8 11h8">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                                Containerized DC
+                            </h3>
+                            <p class="text-sm leading-relaxed text-[#102C47]/70">
+                                Fully engineered, portable, and rapidly deployable data center solution
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Portable</span>
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Weather
+                                    resistant</span>
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Quick
+                                    install</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group rounded-xl border border-[#102C4720] bg-white p-6 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+                        <div class="space-y-4">
+                            <div
+                                class="inline-flex rounded-lg bg-[#102C47]/10 p-3 text-[#102C47] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 20h8M12 16v4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                                FABNET DCIM
+                            </h3>
+                            <p class="text-sm leading-relaxed text-[#102C47]/70">
+                                Comprehensive tools for monitoring, managing, and optimizing data center operations
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Real-time
+                                    monitoring</span>
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Analytics</span>
+                                <span
+                                    class="inline-flex rounded-full bg-[#102C47]/10 px-2.5 py-0.5 text-xs font-medium text-[#102C47]/70">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-20 md:py-28">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="mb-12 space-y-4 text-center">
+                <p class="text-sm font-semibold uppercase tracking-wider text-[#7FA94B]">
+                    Product Catalog
+                </p>
+                <h2 class="text-3xl font-bold tracking-tight text-[#102C47] md:text-4xl lg:text-5xl">
+                    Premium Network Infrastructure
+                </h2>
+                <p class="mx-auto max-w-2xl text-lg leading-relaxed text-[#102C47]/70">
+                    Enterprise-grade cabling, cabinets, and accessories engineered for performance and reliability.
+                </p>
+            </div>
+
+            <!-- Category tabs -->
+            <div class="mb-8 flex flex-wrap justify-center gap-2">
+                <button type="button"
+                    class="product-tab inline-flex items-center gap-2 rounded-full bg-[#102C47] px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-200"
+                    data-category="cabinets">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6M9 12h6M9 17h6"></path>
+                    </svg>
+                    <span class="hidden sm:inline">Cabinets &amp; Enclosures</span>
+                    <span class="sm:hidden">Cabinets</span>
+                </button>
+
+                <button type="button"
+                    class="product-tab inline-flex items-center gap-2 rounded-full border border-[#102C4720] bg-white px-5 py-2.5 text-sm font-medium text-[#102C47]/70 transition-all duration-200 hover:bg-white/80 hover:text-[#102C47]"
+                    data-category="fiber">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 8c2 0 2 8 4 8s2-8 4-8"></path>
+                    </svg>
+                    <span class="hidden sm:inline">Fiber Cables</span>
+                    <span class="sm:hidden">Fiber</span>
+                </button>
+
+                <button type="button"
+                    class="product-tab inline-flex items-center gap-2 rounded-full border border-[#102C4720] bg-white px-5 py-2.5 text-sm font-medium text-[#102C47]/70 transition-all duration-200 hover:bg-white/80 hover:text-[#102C47]"
+                    data-category="copper">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="6" height="6"></rect>
+                        <rect x="14" y="4" width="6" height="6"></rect>
+                        <rect x="4" y="14" width="6" height="6"></rect>
+                        <rect x="14" y="14" width="6" height="6"></rect>
+                    </svg>
+                    <span class="hidden sm:inline">Bulk Copper Cables</span>
+                    <span class="sm:hidden">Bulk</span>
+                </button>
+
+                <button type="button"
+                    class="product-tab inline-flex items-center gap-2 rounded-full border border-[#102C4720] bg-white px-5 py-2.5 text-sm font-medium text-[#102C47]/70 transition-all duration-200 hover:bg-white/80 hover:text-[#102C47]"
+                    data-category="accessories">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M14.7 6.3a4 4 0 1 0 3 3l3 3-2 2-3-3a4 4 0 0 0-1-5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 19l4-4"></path>
+                    </svg>
+                    <span class="hidden sm:inline">Accessories</span>
+                    <span class="sm:hidden">Accessories</span>
+                </button>
+            </div>
+
+            <!-- Active category content -->
+            <div class="rounded-2xl border border-[#102C4720] bg-white p-8 md:p-12">
+                <div class="grid gap-8 lg:grid-cols-2">
+                    <div class="space-y-6">
+                        <div id="active-icon" class="inline-flex rounded-lg bg-[#7FA94B]/10 p-4 text-[#7FA94B]">
+                            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6M9 12h6M9 17h6"></path>
+                            </svg>
+                        </div>
+
+                        <h3 id="active-title" class="text-2xl font-bold text-[#102C47] md:text-3xl">
+                            Cabinets &amp; Enclosures
+                        </h3>
+
+                        <p id="active-description" class="text-lg leading-relaxed text-[#102C47]/70">
+                            Complete range of floor mount, wall mount, flush mount, and outdoor cabinets with PDU
+                            solutions and accessories.
+                        </p>
+
+                        <a id="active-link" href="/products/cabinets"
+                            class="inline-flex items-center rounded-md bg-[#102C47] px-6 py-3 text-base font-medium text-white transition hover:opacity-90">
+                            View All Products
+                            <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div id="products-grid" class="grid gap-4 sm:grid-cols-2">
+                        <div
+                            class="rounded-lg border border-[#102C4720] bg-white p-5 transition-colors hover:border-[#7FA94B]/50">
+                            <h4 class="mb-3 font-semibold text-[#102C47]">Floor Mount Cabinets</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Standard
+                                    Data</span>
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Server
+                                    Series</span>
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Network
+                                    Series</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="rounded-lg border border-[#102C4720] bg-white p-5 transition-colors hover:border-[#7FA94B]/50">
+                            <h4 class="mb-3 font-semibold text-[#102C47]">Wall Mount Cabinets</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Single
+                                    Section</span>
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Dual
+                                    Section</span>
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Flush
+                                    Mount</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="rounded-lg border border-[#102C4720] bg-white p-5 transition-colors hover:border-[#7FA94B]/50">
+                            <h4 class="mb-3 font-semibold text-[#102C47]">Outdoor Solutions</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Outdoor
+                                    Cabinets</span>
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Outdoor
+                                    Enclosures</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="rounded-lg border border-[#102C4720] bg-white p-5 transition-colors hover:border-[#7FA94B]/50">
+                            <h4 class="mb-3 font-semibold text-[#102C47]">PDU Solutions</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Basic</span>
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Metered</span>
+                                <span
+                                    class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">Monitored</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const productCategories = {
+                cabinets: {
+                    title: "Cabinets & Enclosures",
+                    description: "Complete range of floor mount, wall mount, flush mount, and outdoor cabinets with PDU solutions and accessories.",
+                    href: "/products/cabinets",
+                    icon: `
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6M9 12h6M9 17h6"></path>
+            </svg>
+          `,
+                    products: [
+                        { name: "Floor Mount Cabinets", types: ["Standard Data", "Server Series", "Network Series"] },
+                        { name: "Wall Mount Cabinets", types: ["Single Section", "Dual Section", "Flush Mount"] },
+                        { name: "Outdoor Solutions", types: ["Outdoor Cabinets", "Outdoor Enclosures"] },
+                        { name: "PDU Solutions", types: ["Basic", "Metered", "Monitored"] }
+                    ]
+                },
+                fiber: {
+                    title: "Fiber Cables",
+                    description: "High-performance fiber optic cables for indoor, outdoor, and fire-rated applications in single mode and multi-mode configurations.",
+                    href: "/products/fiber-cables",
+                    icon: `
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 8c2 0 2 8 4 8s2-8 4-8"></path>
+            </svg>
+          `,
+                    products: [
+                        { name: "Indoor Cables", types: ["Single Mode", "Multi Mode"] },
+                        { name: "Outdoor Cables", types: ["Single Mode", "Multi Mode"] },
+                        { name: "Indoor/Outdoor", types: ["Hybrid Solutions"] },
+                        { name: "Fire Rated", types: ["LSZH", "Plenum Rated"] }
+                    ]
+                },
+                copper: {
+                    title: "Bulk Copper Cables",
+                    description: "Premium copper cabling solutions from Cat3 to Cat8, including shielded, unshielded, and outdoor-rated options.",
+                    href: "/products/copper-cables",
+                    icon: `
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="4" y="4" width="6" height="6"></rect>
+              <rect x="14" y="4" width="6" height="6"></rect>
+              <rect x="4" y="14" width="6" height="6"></rect>
+              <rect x="14" y="14" width="6" height="6"></rect>
+            </svg>
+          `,
+                    products: [
+                        { name: "Cat6 Cables", types: ["Shielded", "Unshielded", "Outdoor"] },
+                        { name: "Cat6A Cables", types: ["Shielded", "Unshielded", "Outdoor"] },
+                        { name: "Cat7/7A Cables", types: ["Shielded", "Outdoor"] },
+                        { name: "Cat8 Cables", types: ["Shielded", "Outdoor"] }
+                    ]
+                },
+                accessories: {
+                    title: "Accessories",
+                    description: "Complete range of copper, fiber, and FTTX accessories including patch panels, patch cords, connectors, and tools.",
+                    href: "/products/accessories",
+                    icon: `
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 1 0 3 3l3 3-2 2-3-3a4 4 0 0 0-1-5z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 19l4-4"></path>
+            </svg>
+          `,
+                    products: [
+                        { name: "Copper Accessories", types: ["Patch Panels", "Patch Cords", "Jack Modules"] },
+                        { name: "Fiber Accessories", types: ["Patch Panels", "Media Converters", "Tools"] },
+                        { name: "FTTX Accessories", types: ["Splitters", "Closures", "Distribution Boxes"] },
+                        { name: "Tools & Equipment", types: ["Testing", "Installation"] }
+                    ]
+                }
+            };
+
+            const tabs = document.querySelectorAll(".product-tab");
+            const activeIcon = document.getElementById("active-icon");
+            const activeTitle = document.getElementById("active-title");
+            const activeDescription = document.getElementById("active-description");
+            const activeLink = document.getElementById("active-link");
+            const productsGrid = document.getElementById("products-grid");
+
+            function renderCategory(categoryKey) {
+                const category = productCategories[categoryKey];
+
+                activeIcon.innerHTML = category.icon;
+                activeTitle.textContent = category.title;
+                activeDescription.textContent = category.description;
+                activeLink.href = category.href;
+
+                productsGrid.innerHTML = category.products.map((product) => `
+          <div class="rounded-lg border border-[#102C4720] bg-white p-5 transition-colors hover:border-[#7FA94B]/50">
+            <h4 class="mb-3 font-semibold text-[#102C47]">${product.name}</h4>
+            <div class="flex flex-wrap gap-1.5">
+              ${product.types.map((type) => `
+                <span class="inline-flex rounded bg-[#102C47]/10 px-2 py-1 text-xs text-[#102C47]/70">${type}</span>
+              `).join("")}
+            </div>
+          </div>
+        `).join("");
+
+                tabs.forEach((tab) => {
+                    const isActive = tab.getAttribute("data-category") === categoryKey;
+                    if (isActive) {
+                        tab.className = "product-tab inline-flex items-center gap-2 rounded-full bg-[#102C47] px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-200";
+                    } else {
+                        tab.className = "product-tab inline-flex items-center gap-2 rounded-full border border-[#102C4720] bg-white px-5 py-2.5 text-sm font-medium text-[#102C47]/70 transition-all duration-200 hover:bg-white/80 hover:text-[#102C47]";
+                    }
+                });
+            }
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", function () {
+                    renderCategory(this.getAttribute("data-category"));
+                });
+            });
+        </script>
+    </section>
+    <section class="bg-[#102C47] py-20 text-white md:py-28">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="mb-16 space-y-4 text-center">
+                <p class="text-sm font-semibold uppercase tracking-wider text-[#7FA94B]">
+                    Our Advantages
+                </p>
+                <h2 class="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
+                    Why Choose Fabnet
+                </h2>
+                <p class="mx-auto max-w-2xl text-lg leading-relaxed text-white/80">
+                    Industry-leading quality, innovation, and customer service that sets us apart in network
+                    infrastructure.
+                </p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="group rounded-xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:bg-white/10">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div
+                                class="inline-flex rounded-lg bg-[#7FA94B]/20 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"></path>
+                                </svg>
+                            </div>
+                            <span class="rounded-full bg-[#7FA94B]/20 px-3 py-1 text-xs font-medium text-[#7FA94B]">
+                                Up to Terabit Speeds
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white transition-colors group-hover:text-[#7FA94B]">
+                            High-Quality Transmission
+                        </h3>
+                        <p class="leading-relaxed text-white/70">
+                            FABNET's fiber optic solutions provide exceptionally high bandwidth, supporting data
+                            transmission speeds up to terabits per second for future-proof infrastructure.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group rounded-xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:bg-white/10">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div
+                                class="inline-flex rounded-lg bg-[#7FA94B]/20 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"></path>
+                                </svg>
+                            </div>
+                            <span class="rounded-full bg-[#7FA94B]/20 px-3 py-1 text-xs font-medium text-[#7FA94B]">
+                                Flame-Retardant
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white transition-colors group-hover:text-[#7FA94B]">
+                            Premium Raw Materials
+                        </h3>
+                        <p class="leading-relaxed text-white/70">
+                            Our copper cables are coated with durable, flame-retardant insulation materials, protecting
+                            them from environmental hazards and ensuring longevity.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group rounded-xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:bg-white/10">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div
+                                class="inline-flex rounded-lg bg-[#7FA94B]/20 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M14.7 6.3a4 4 0 1 0 3 3l3 3-2 2-3-3a4 4 0 0 0-1-5z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 19l4-4"></path>
+                                </svg>
+                            </div>
+                            <span class="rounded-full bg-[#7FA94B]/20 px-3 py-1 text-xs font-medium text-[#7FA94B]">
+                                Plug-and-Play
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white transition-colors group-hover:text-[#7FA94B]">
+                            Easy Installation
+                        </h3>
+                        <p class="leading-relaxed text-white/70">
+                            FABNET's network solutions are designed with modular, plug-and-play components that reduce
+                            installation time and minimize maintenance requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group rounded-xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:bg-white/10">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div
+                                class="inline-flex rounded-lg bg-[#7FA94B]/20 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="8"></circle>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3"></path>
+                                </svg>
+                            </div>
+                            <span class="rounded-full bg-[#7FA94B]/20 px-3 py-1 text-xs font-medium text-[#7FA94B]">
+                                Custom Design
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white transition-colors group-hover:text-[#7FA94B]">
+                            Tailored Solutions
+                        </h3>
+                        <p class="leading-relaxed text-white/70">
+                            At FABNET, we understand that every business has unique needs. Our custom-tailored network
+                            infrastructure solutions perfectly fit your business application.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group rounded-xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:bg-white/10">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div
+                                class="inline-flex rounded-lg bg-[#7FA94B]/20 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 1v22"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H7"></path>
+                                </svg>
+                            </div>
+                            <span class="rounded-full bg-[#7FA94B]/20 px-3 py-1 text-xs font-medium text-[#7FA94B]">
+                                Scalable ROI
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white transition-colors group-hover:text-[#7FA94B]">
+                            Cost-Effective
+                        </h3>
+                        <p class="leading-relaxed text-white/70">
+                            FABNET's modular design allows you to scale as your business grows, allowing you to expand
+                            capacity only when needed, optimizing your investment.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="group rounded-xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-[#7FA94B]/50 hover:bg-white/10">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div
+                                class="inline-flex rounded-lg bg-[#7FA94B]/20 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21C7 18 5 14 5 10a7 7 0 0 1 14 0c0 4-2 8-7 11z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 8c-1.5 1.5-3 2.5-3 4a3 3 0 0 0 6 0c0-1.5-1.5-2.5-3-4z"></path>
+                                </svg>
+                            </div>
+                            <span class="rounded-full bg-[#7FA94B]/20 px-3 py-1 text-xs font-medium text-[#7FA94B]">
+                                Eco-Friendly
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white transition-colors group-hover:text-[#7FA94B]">
+                            Sustainability
+                        </h3>
+                        <p class="leading-relaxed text-white/70">
+                            FABNET is committed to delivering network infrastructure solutions that prioritize
+                            sustainability, efficiency, and environmental responsibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="/about"
+                    class="inline-flex items-center font-medium text-[#7FA94B] transition-colors hover:opacity-80">
+                    Learn more about our company
+                    <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-20 md:py-28">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="mb-12 space-y-4 text-center">
+                <p class="text-sm font-semibold uppercase tracking-wider text-[#7FA94B]">
+                    Technical Resources
+                </p>
+                <h2 class="text-3xl font-bold tracking-tight text-[#102C47] md:text-4xl lg:text-5xl">
+                    Product Data Sheets
+                </h2>
+                <p class="mx-auto max-w-2xl text-lg leading-relaxed text-[#102C47]/70">
+                    Download detailed specifications and technical documentation for all our products.
+                </p>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="mb-8 space-y-4">
+                <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div class="relative max-w-md flex-1">
+                        <svg class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#102C47]/50" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m20 20-3.5-3.5"></path>
+                        </svg>
+                        <input id="search-input" type="search" placeholder="Search data sheets..."
+                            class="w-full rounded-md border border-[#102C4730] bg-white py-2.5 pl-10 pr-4 text-[#102C47] outline-none focus:border-[#7FA94B]" />
+                    </div>
+
+                    <div class="flex items-center gap-2 text-sm text-[#102C47]/70">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 12h10"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 18h4"></path>
+                        </svg>
+                        <span id="document-count">6 documents</span>
+                    </div>
+                </div>
+
+                <!-- Category filters -->
+                <div class="flex flex-wrap gap-2">
+                    <button type="button"
+                        class="category-btn rounded-full bg-[#102C47] px-4 py-1.5 text-sm font-medium text-white transition-colors"
+                        data-category="All">All</button>
+                    <button type="button"
+                        class="category-btn rounded-full bg-[#102C47]/10 px-4 py-1.5 text-sm font-medium text-[#102C47]/70 transition-colors hover:bg-[#102C47]/15 hover:text-[#102C47]"
+                        data-category="Copper Cables">Copper Cables</button>
+                    <button type="button"
+                        class="category-btn rounded-full bg-[#102C47]/10 px-4 py-1.5 text-sm font-medium text-[#102C47]/70 transition-colors hover:bg-[#102C47]/15 hover:text-[#102C47]"
+                        data-category="Fiber Cables">Fiber Cables</button>
+                    <button type="button"
+                        class="category-btn rounded-full bg-[#102C47]/10 px-4 py-1.5 text-sm font-medium text-[#102C47]/70 transition-colors hover:bg-[#102C47]/15 hover:text-[#102C47]"
+                        data-category="Cabinets">Cabinets</button>
+                    <button type="button"
+                        class="category-btn rounded-full bg-[#102C47]/10 px-4 py-1.5 text-sm font-medium text-[#102C47]/70 transition-colors hover:bg-[#102C47]/15 hover:text-[#102C47]"
+                        data-category="Data Center">Data Center</button>
+                    <button type="button"
+                        class="category-btn rounded-full bg-[#102C47]/10 px-4 py-1.5 text-sm font-medium text-[#102C47]/70 transition-colors hover:bg-[#102C47]/15 hover:text-[#102C47]"
+                        data-category="Software">Software</button>
+                    <button type="button"
+                        class="category-btn rounded-full bg-[#102C47]/10 px-4 py-1.5 text-sm font-medium text-[#102C47]/70 transition-colors hover:bg-[#102C47]/15 hover:text-[#102C47]"
+                        data-category="Accessories">Accessories</button>
+                </div>
+            </div>
+
+            <!-- Data sheets grid -->
+            <div id="data-sheets-grid" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+
+            <!-- Empty state -->
+            <div id="empty-state" class="hidden py-12 text-center">
+                <svg class="mx-auto h-12 w-12 text-[#102C47]/30" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 2v6h6"></path>
+                </svg>
+                <p class="mt-4 text-lg text-[#102C47]/70">
+                    No data sheets found matching your criteria.
+                </p>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="/data-sheets"
+                    class="inline-flex items-center rounded-md border border-[#102C4720] px-6 py-3 text-base font-medium text-[#102C47] transition hover:bg-[#102C47]/5">
+                    View All Data Sheets
+                    <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 2v6h6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <script>
+            const dataSheets = [
+                {
+                    id: 1,
+                    title: "Cat6A Shielded Cable Specifications",
+                    category: "Copper Cables",
+                    fileSize: "2.4 MB",
+                    format: "PDF"
+                },
+                {
+                    id: 2,
+                    title: "Fiber Optic Single Mode Indoor Cable",
+                    category: "Fiber Cables",
+                    fileSize: "1.8 MB",
+                    format: "PDF"
+                },
+                {
+                    id: 3,
+                    title: "42U Floor Mount Server Cabinet",
+                    category: "Cabinets",
+                    fileSize: "3.2 MB",
+                    format: "PDF"
+                },
+                {
+                    id: 4,
+                    title: "Micro Modular Data Center Solutions",
+                    category: "Data Center",
+                    fileSize: "5.1 MB",
+                    format: "PDF"
+                },
+                {
+                    id: 5,
+                    title: "DCIM Software Overview",
+                    category: "Software",
+                    fileSize: "4.7 MB",
+                    format: "PDF"
+                },
+                {
+                    id: 6,
+                    title: "Intelligent Patch Panel System",
+                    category: "Accessories",
+                    fileSize: "1.5 MB",
+                    format: "PDF"
+                }
+            ];
+
+            let activeCategory = "All";
+            let searchQuery = "";
+
+            const searchInput = document.getElementById("search-input");
+            const categoryButtons = document.querySelectorAll(".category-btn");
+            const grid = document.getElementById("data-sheets-grid");
+            const emptyState = document.getElementById("empty-state");
+            const documentCount = document.getElementById("document-count");
+
+            function sheetCard(sheet) {
+                return `
+          <div class="group flex items-start gap-4 rounded-xl border border-[#102C4720] bg-white p-5 transition-all duration-300 hover:border-[#7FA94B]/50 hover:shadow-lg">
+            <div class="flex-shrink-0 rounded-lg bg-[#7FA94B]/10 p-3 text-[#7FA94B] transition-colors group-hover:bg-[#7FA94B] group-hover:text-white">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 2v6h6"></path>
+              </svg>
+            </div>
+
+            <div class="min-w-0 flex-1">
+              <h3 class="line-clamp-2 font-medium text-[#102C47] transition-colors group-hover:text-[#7FA94B]">
+                ${sheet.title}
+              </h3>
+              <div class="mt-2 flex items-center gap-3 text-sm text-[#102C47]/70">
+                <span>${sheet.category}</span>
+                <span>•</span>
+                <span>${sheet.fileSize}</span>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="flex-shrink-0 rounded-full p-2 text-[#102C47]/70 transition-colors hover:bg-[#7FA94B] hover:text-white"
+              aria-label="Download ${sheet.title}"
+            >
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="m7 10 5 5 5-5"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 21h14"></path>
+              </svg>
+            </button>
+          </div>
+        `;
+            }
+
+            function renderSheets() {
+                const filtered = dataSheets.filter((sheet) => {
+                    const matchesSearch = sheet.title.toLowerCase().includes(searchQuery.toLowerCase());
+                    const matchesCategory = activeCategory === "All" || sheet.category === activeCategory;
+                    return matchesSearch && matchesCategory;
+                });
+
+                documentCount.textContent = `${filtered.length} document${filtered.length === 1 ? "" : "s"}`;
+
+                if (filtered.length === 0) {
+                    grid.innerHTML = "";
+                    emptyState.classList.remove("hidden");
+                } else {
+                    grid.innerHTML = filtered.map(sheetCard).join("");
+                    emptyState.classList.add("hidden");
+                }
+            }
+
+            function updateCategoryButtons() {
+                categoryButtons.forEach((button) => {
+                    const isActive = button.getAttribute("data-category") === activeCategory;
+                    button.className = isActive
+                        ? "category-btn rounded-full bg-[#102C47] px-4 py-1.5 text-sm font-medium text-white transition-colors"
+                        : "category-btn rounded-full bg-[#102C47]/10 px-4 py-1.5 text-sm font-medium text-[#102C47]/70 transition-colors hover:bg-[#102C47]/15 hover:text-[#102C47]";
+                });
+            }
+
+            searchInput.addEventListener("input", function (e) {
+                searchQuery = e.target.value;
+                renderSheets();
+            });
+
+            categoryButtons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    activeCategory = this.getAttribute("data-category");
+                    updateCategoryButtons();
+                    renderSheets();
+                });
+            });
+
+            renderSheets();
+        </script>
+    </section>
+    <footer class="border-t border-[#102C4720] bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-16">
+            <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+                <!-- Brand -->
+                <div class="space-y-6 lg:col-span-2">
+                    <a href="/" class="flex items-center gap-2">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#102C47]">
+                            <span class="text-xl font-bold text-white">F</span>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight text-[#102C47]">
+                            FABNET
+                        </span>
+                    </a>
+
+                    <p class="max-w-sm leading-relaxed text-[#102C47]/70">
+                        Leading provider of enterprise data center solutions, network infrastructure, and intelligent
+                        cabling systems for smart cities and enterprises worldwide.
+                    </p>
+
+                    <div class="space-y-3">
+                        <a href="mailto:info@fabnet.com"
+                            class="flex items-center gap-3 text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">
+                            <svg class="h-5 w-5 text-[#7FA94B]" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 7l8 6 8-6"></path>
+                            </svg>
+                            <span>info@fabnet.com</span>
+                        </a>
+
+                        <a href="tel:+97440172330"
+                            class="flex items-center gap-3 text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">
+                            <svg class="h-5 w-5 text-[#7FA94B]" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.6a2 2 0 0 1-.45 2.11L8.1 9.91a16 16 0 0 0 6 6l1.48-1.14a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.6.63A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>+974 4017 2330</span>
+                        </a>
+
+                        <div class="flex items-start gap-3 text-[#102C47]/70">
+                            <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-[#7FA94B]" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21s-7-4.35-7-10a7 7 0 0 1 14 0c0 5.65-7 10-7 10z"></path>
+                                <circle cx="12" cy="11" r="2.5"></circle>
+                            </svg>
+                            <span>26th Floor, Al Marina Twin Tower B, 34 5th Street, Lusail, Qatar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h3 class="mb-4 font-semibold text-[#102C47]">Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/solutions/data-center"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Data Center</a></li>
+                        <li><a href="/solutions/dcim"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Fabnet DCIM</a></li>
+                        <li><a href="/solutions/ftth"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Fiber to the Home</a>
+                        </li>
+                        <li><a href="/solutions/fiber-fence"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Fabnet Fiber Fence</a>
+                        </li>
+                        <li><a href="/solutions/iot-monitor"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Fabnet IoT Monitor</a>
+                        </li>
+                        <li><a href="/solutions/aim"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">AIM Solution</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="mb-4 font-semibold text-[#102C47]">Products</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/products/cabinets"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Cabinets &amp;
+                                Enclosures</a></li>
+                        <li><a href="/products/fiber-cables"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Fiber Cables</a></li>
+                        <li><a href="/products/copper-cables"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Bulk Copper Cables</a>
+                        </li>
+                        <li><a href="/products/accessories"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Accessories</a></li>
+                        <li><a href="/data-sheets" class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Data
+                                Sheets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="mb-4 font-semibold text-[#102C47]">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/login" class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Login</a>
+                        </li>
+                        <li><a href="/contact" class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Contact
+                                Us</a></li>
+                        <li><a href="/support"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Support</a></li>
+                        <li><a href="/about" class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">About
+                                Us</a></li>
+                        <li><a href="/careers"
+                                class="text-[#102C47]/70 transition-colors hover:text-[#7FA94B]">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom bar -->
+            <div
+                class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#102C4720] pt-8 md:flex-row">
+                <p class="text-sm text-[#102C47]/70">
+                    Copyright © <span id="footer-year"></span> FabNet | All rights reserved
+                </p>
+
+                <div class="flex items-center gap-4">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="rounded-full p-2 text-[#102C47]/70 transition-colors hover:bg-[#7FA94B] hover:text-white"
+                        aria-label="LinkedIn">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-12h4v2"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                        class="rounded-full p-2 text-[#102C47]/70 transition-colors hover:bg-[#7FA94B] hover:text-white"
+                        aria-label="Twitter">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M22 5.8c-.7.3-1.5.5-2.3.6a4 4 0 0 0 1.8-2.2 8 8 0 0 1-2.5 1A4 4 0 0 0 12 8.3a11.3 11.3 0 0 1-8.2-4.2 4 4 0 0 0 1.2 5.3A4 4 0 0 1 3 8.8v.1a4 4 0 0 0 3.2 3.9 4 4 0 0 1-1.8.1 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.1 11.3 11.3 0 0 0 8.1 20c7.3 0 11.3-6 11.3-11.3v-.5A8 8 0 0 0 22 5.8z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                        class="rounded-full p-2 text-[#102C47]/70 transition-colors hover:bg-[#7FA94B] hover:text-white"
+                        aria-label="YouTube">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M22.5 6.5a2.8 2.8 0 0 0-2-2C18.8 4 12 4 12 4s-6.8 0-8.5.5a2.8 2.8 0 0 0-2 2A29.4 29.4 0 0 0 1 12a29.4 29.4 0 0 0 .5 5.5 2.8 2.8 0 0 0 2 2c1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5a2.8 2.8 0 0 0 2-2A29.4 29.4 0 0 0 23 12a29.4 29.4 0 0 0-.5-5.5z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m10 15 5-3-5-3z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("footer-year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOpenIcon = document.getElementById('menu-open-icon');
+        const menuCloseIcon = document.getElementById('menu-close-icon');
+
+        mobileMenuButton.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+            menuOpenIcon.classList.toggle('hidden');
+            menuCloseIcon.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
+
+<DataSheetsSection />
+<Footer />
