@@ -48,10 +48,8 @@
         <!-- Main navigation -->
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
             <a href="/" class="flex items-center gap-2">
-                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#102C47]">
-                    <span class="text-xl font-bold text-white">F</span>
-                </div>
-                <span class="text-2xl font-bold tracking-tight text-[#102C47]">FABNET</span>
+                <img src="https://www.fabnet.com/wp-content/uploads/2025/01/fabnet-logo.png" alt="Fabnet Logo"
+                    class="h-10 w-auto object-contain md:h-12" />
             </a>
 
             <!-- Desktop Navigation -->
@@ -1428,6 +1426,111 @@
             });
 
             renderSheets();
+        </script>
+    </section>
+    <section class="bg-[#102C47] py-16 md:py-24" aria-labelledby="newsletter-heading">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-4xl text-center">
+                <!-- Icon -->
+                <div class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#7FA94B]">
+                    <svg class="h-8 w-8 text-white" aria-hidden="true" fill="none" stroke="currentColor"
+                        stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 7l8 6 8-6"></path>
+                    </svg>
+                </div>
+
+                <!-- Heading -->
+                <h2 id="newsletter-heading" class="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+                    Subscribe to Our Newsletter
+                </h2>
+
+                <!-- Description -->
+                <p class="mx-auto mb-8 max-w-2xl text-lg text-white/80 md:text-xl">
+                    Stay updated with the latest news, product launches, and industry insights from Fabnet.
+                    Get exclusive content delivered directly to your inbox.
+                </p>
+
+                <!-- Form -->
+                <form id="newsletter-form" class="mx-auto flex max-w-xl flex-col gap-4 sm:flex-row">
+                    <div class="relative flex-1">
+                        <label for="email-input" class="sr-only">Email address</label>
+                        <input id="email-input" type="email" placeholder="Enter your email address" required
+                            aria-describedby="email-description"
+                            class="h-14 w-full rounded-md border-0 bg-white px-5 text-base text-[#102C47] placeholder:text-[#102C47]/50 outline-none ring-0 focus:ring-2 focus:ring-[#7FA94B]" />
+                    </div>
+
+                    <button id="newsletter-submit" type="submit"
+                        class="h-14 rounded-md bg-[#7FA94B] px-8 text-base font-semibold text-white transition-opacity hover:opacity-90">
+                        <span id="submit-default" class="flex items-center gap-2">
+                            Subscribe
+                            <svg class="h-5 w-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </span>
+
+                        <span id="submit-loading" class="hidden items-center gap-2">
+                            <svg class="h-5 w-5 animate-spin" viewBox="0 0 24 24" fill="none">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                    stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor"
+                                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                </path>
+                            </svg>
+                            Subscribing...
+                        </span>
+                    </button>
+                </form>
+
+                <!-- Success state -->
+                <div id="newsletter-success" class="hidden flex-col items-center gap-4 py-4">
+                    <div class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#7FA94B]">
+                        <svg class="h-8 w-8 text-white" aria-hidden="true" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"></path>
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold text-white">
+                        Thank you for subscribing!
+                    </p>
+                    <p class="text-white/80">
+                        You will receive our latest updates and news in your inbox.
+                    </p>
+                </div>
+
+                <!-- Privacy note -->
+                <p id="email-description" class="mt-6 text-sm text-white/60">
+                    We respect your privacy. Unsubscribe at any time.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            const newsletterForm = document.getElementById("newsletter-form");
+            const emailInput = document.getElementById("email-input");
+            const newsletterSuccess = document.getElementById("newsletter-success");
+            const submitDefault = document.getElementById("submit-default");
+            const submitLoading = document.getElementById("submit-loading");
+            const submitButton = document.getElementById("newsletter-submit");
+
+            newsletterForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                if (!emailInput.value.trim()) return;
+
+                submitButton.disabled = true;
+                submitDefault.classList.add("hidden");
+                submitLoading.classList.remove("hidden");
+                submitLoading.classList.add("flex");
+
+                setTimeout(() => {
+                    newsletterForm.classList.add("hidden");
+                    newsletterSuccess.classList.remove("hidden");
+                    newsletterSuccess.classList.add("flex");
+                }, 1000);
+            });
         </script>
     </section>
     <footer class="border-t border-[#102C4720] bg-white">
